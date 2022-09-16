@@ -36,6 +36,26 @@
     padding: 0.5rem;
     border-radius: 12px;
   }
+
+  .task-item button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border: 1px solid #002b08;
+    background-color: #002b08;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    width: 6rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+  
+  .task-item button:hover,
+  .task-item button:active {
+    background-color: #004a0e;
+    border-color: #004a0e;
+  }
   
   @media (min-width: 580px) {
     .task-item_description {

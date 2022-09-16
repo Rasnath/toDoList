@@ -31,14 +31,14 @@ function TaskItem(props) {
             {props.priority}
           </div>
           {!props.state && (
-            <div className="task-item_priority" onClick={completeHandler}>
+            <button className="task" onClick={completeHandler}>
               Done
-            </div>
+            </button>
           )}
           {props.state && (
-            <div className="task-item_priority" onClick={completeHandler}>
+            <button className="task" onClick={completeHandler}>
               Remove
-            </div>
+            </button>
           )}
         </div>
       </Card>
