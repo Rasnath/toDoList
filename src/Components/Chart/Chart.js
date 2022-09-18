@@ -3,9 +3,9 @@ import ChartBar from "./ChartBar";
 
 function Chart(props) {
   const data = [
-    { label: "High", value: 0 },
-    { label: "Medium", value: 0 },
     { label: "Low", value: 0 },
+    { label: "Medium", value: 0 },
+    { label: "High", value: 0 },
   ];
 
   const filteredTasks = props.tasks.filter((task) => {
