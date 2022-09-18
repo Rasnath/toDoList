@@ -1,17 +1,15 @@
 .new-task_controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-  
-
-.new-form_title input {
-   width: 29rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-  
-  .new-task_actions {
-    text-align: right;
-  }
+.new-form_title input {
+  width: 29rem;
+}
+
+.new-task_actions {
+  text-align: right;
+}

@@ -43,12 +43,17 @@ function App() {
   }
 
   function completeHandler(id) {
+    // index with id
     const indexAtId = tasksList.findIndex((obj) => obj.id === id);
+    // copy array
     const updateTasks = tasksList.slice() 
+    // update the state for the inverse
     updateTasks[indexAtId].state = !updateTasks[indexAtId].state
+    // update the state
     setTasksList(updateTasks)
   }
 
+ 
   return (
     <div>
       <NewTask onAddTask={addTaskHandler} />

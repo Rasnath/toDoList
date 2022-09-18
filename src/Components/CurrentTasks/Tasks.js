@@ -3,10 +3,12 @@ import Card from "../UI/Card";
 import Filter from "../Filter/Filter";
 import React, { useState } from "react";
 import Taskslist from "./TasksList";
+import Chart from "../Chart/Chart";
 
 function Tasks(props) {
   const [givenPriority, setGivenPriority] = useState("All");
   const [completed, setCompleted] = useState(false);
+
 
   function filterPriorityHandler(filterPriority) {
     setGivenPriority(filterPriority);
@@ -47,6 +49,7 @@ function Tasks(props) {
         onUnCompleted={uncompletedHandler}
         oncompletState={completed}
       />
+      <Chart tasks={sortTasks} onFilterPriority={filterPriorityHandler}></Chart>
       <Taskslist
         items={filteredTasks}
         onComplete={completeHandler}
