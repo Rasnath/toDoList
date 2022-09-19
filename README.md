@@ -1,5 +1,20 @@
 # toDoList
-A simple and beautiful to do list using React.js
+toDoList is a responsive [React] (http://facebook.github.io/react/index.html) app, where you can create a task with date and priority, filter, mark as complete and see the summary of pending tasks in a graph.
 
-https://user-images.githubusercontent.com/109655925/190716491-d36adb1a-f85e-41f2-b9a8-9d70000dc5cb.mov
+## App preview
+![6tw8sz](https://user-images.githubusercontent.com/109655925/190982101-8bcbeef8-631a-469d-a80f-d1dbe328ff83.gif)
 
+## Installation
+[node.js](http://nodejs.org/download/) is required to get ``npm``.
+
+If you would like to download the code and try it for yourself:
+
+1. Clone the repo: `[https://github.com/Rasnath/toDoList]`
+2. install packages in application folder: `npm install`
+4. Run: 'npm start'
+
+## Donate :coffee:
+
+If you like this project and wish to say to say thanks - I'm always open to a coffee!
+
+<a href="https://www.buymeacoffee.com/rasnath" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
