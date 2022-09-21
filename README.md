@@ -14,7 +14,7 @@ If you would like to download the code and try it for yourself:
 2. Clone the repo: `[https://github.com/Rasnath/toDoList]`
 3. Open new terminal. 
 4. Install packages in application folder: `npm install`
-4. Run: 'npm start'
+4. Run: `npm start`
 
 ## Donate :coffee:
 
