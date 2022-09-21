@@ -1,31 +1,35 @@
-import "./NewTask.css";
 import TaskForm from "./TaskForm";
-import React, {useState} from "react";
+import React, { useState } from "react";
+import style from "./NewTask.module.css";
 
 function NewTask(props) {
-
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   function saveNewTaskData(givenTaskData) {
     const taskData = {
       ...givenTaskData,
       id: Math.random().toString(),
-      state: false
+      state: false,
     };
     props.onAddTask(taskData);
-    setOpen(false)
+    setOpen(false);
   }
 
-  function openFormHandler (){
-    setOpen(true)
+  function openFormHandler() {
+    setOpen(true);
   }
-  function onCancelHandler () {
-    setOpen(false)
+  function onCancelHandler() {
+    setOpen(false);
   }
 
   return (
-    <div className="new-task">
+    <div className={style['new-task']}>
       {!open && <button onClick={openFormHandler}> Add New Task</button>}
-      {open && <TaskForm onNewTaskData={saveNewTaskData} onCancel={onCancelHandler}></TaskForm>}
+      {open && (
+        <TaskForm
+          onNewTaskData={saveNewTaskData}
+          onCancel={onCancelHandler}
+        ></TaskForm>
+      )}
     </div>
   );
 }

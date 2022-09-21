@@ -21,7 +21,7 @@ function TaskForm(props) {
 
   function submitHandler(event) {
     event.preventDefault();
-    if (givenTask === "" || givenDate === "") {
+    if (givenTask.trim().length === 0 || givenDate.trim().length === 0) {
     } else {
       const taskData = {
         title: givenTask,

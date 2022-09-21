@@ -1,4 +1,4 @@
-import "./Tasks.css";
+import style from "./Tasks.module.css";
 import Card from "../UI/Card";
 import Filter from "../Filter/Filter";
 import React, { useState } from "react";
@@ -8,7 +8,6 @@ import Chart from "../Chart/Chart";
 function Tasks(props) {
   const [givenPriority, setGivenPriority] = useState("All");
   const [completed, setCompleted] = useState(false);
-
 
   function filterPriorityHandler(filterPriority) {
     setGivenPriority(filterPriority);
@@ -41,7 +40,11 @@ function Tasks(props) {
   }
 
   return (
-    <Card className="tasks">
+    // other way to implement className with a unique id
+    // ....module.css
+    // import ... from ...
+    // className ={...}
+    <Card className={style.tasks}>
       <Filter
         selected={givenPriority}
         onFilterPriority={filterPriorityHandler}
@@ -50,10 +53,7 @@ function Tasks(props) {
         oncompletState={completed}
       />
       <Chart tasks={sortTasks} onFilterPriority={filterPriorityHandler}></Chart>
-      <Taskslist
-        items={filteredTasks}
-        onComplete={completeHandler}
-      ></Taskslist>
+      <Taskslist items={filteredTasks} onComplete={completeHandler}></Taskslist>
     </Card>
   );
 }
