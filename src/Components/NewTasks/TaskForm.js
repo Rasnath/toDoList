@@ -56,7 +56,7 @@ function TaskForm(props) {
   }
 
   function desmissHandler() {
-    setError(null)
+    setError(null);
   }
 
   return (
@@ -72,7 +72,12 @@ function TaskForm(props) {
         <div className="new-task_controls">
           <Form>
             <label>Date</label>
-            <input type="date" value={givenDate} onChange={dateHandler} />
+            <input
+              type="date"
+              min={new Date().toISOString().split('T')[0]}
+              value={givenDate}
+              onChange={dateHandler}
+            />
           </Form>
           <Form className="new-form_title">
             <label>Task</label>
