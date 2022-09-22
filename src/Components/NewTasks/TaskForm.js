@@ -23,10 +23,24 @@ function TaskForm(props) {
 
   function submitHandler(event) {
     event.preventDefault();
-    if (givenTask.trim().length === 0 || givenDate.trim().length === 0) {
+    if (givenTask.trim().length === 0 && givenDate.trim().length === 0) {
       setError({
         title: "Invalid input",
-        message: "Please enter a valid date and task",
+        message: "Please enter a valid task and date",
+      });
+      return;
+    }
+    if (givenTask.trim().length === 0) {
+      setError({
+        title: "Invalid task",
+        message: "Please enter a valid task",
+      });
+      return;
+    }
+    if (givenDate.trim().length === 0) {
+      setError({
+        title: "Invalid Date",
+        message: "Please enter a valid date",
       });
       return;
     }
