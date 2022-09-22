@@ -5,7 +5,7 @@ import DummyTasks from "./Components/NewTasks/DummyTasks";
 
 function App() {
   
-  const [tasksList, setTasksList] = useState(DummyTasks);
+  const [tasksList, setTasksList] = useState([]);
 
   function addTaskHandler(task) {
     setTasksList(function (prevTasks) {
