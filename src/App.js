@@ -1,6 +1,6 @@
 import Tasks from "./Components/CurrentTasks/Tasks";
 import NewTask from "./Components/NewTasks/NewTask";
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import DummyTasks from "./Components/NewTasks/DummyTasks";
 
 function App() {
@@ -26,10 +26,11 @@ function App() {
 
  
   return (
-    <div>
+    // better way to wrapp the content
+    <Fragment>
       <NewTask onAddTask={addTaskHandler} />
       <Tasks tasks={tasksList} onComplete={completeHandler}></Tasks>
-    </div>
+    </Fragment>
   );
 }
 

@@ -1,6 +1,7 @@
 import TaskForm from "./TaskForm";
 import React, { useState } from "react";
 import style from "./NewTask.module.css";
+import Button from "../UI/Button";
 
 function NewTask(props) {
   const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ function NewTask(props) {
 
   return (
     <div className={style['new-task']}>
-      {!open && <button onClick={openFormHandler}> Add New Task</button>}
+      {!open && <Button onClick={openFormHandler}> Add New Task</Button>}
       {open && (
         <TaskForm
           onNewTaskData={saveNewTaskData}

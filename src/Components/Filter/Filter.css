@@ -23,31 +23,3 @@
     border-radius: 6px;
   }
 
-  .task-filter button {
-    font: inherit;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    border: 1px solid #40005d;
-    background-color: #40005d;
-    color: white;
-    border-radius: 12px;
-    margin-right: 1rem;
-    width: 9rem;
-  }
-  
-  .task-filter button:hover,
-  .button:active {
-    background-color: #510674;
-    border-color: #510674;
-  }
-  
-  .task-filter button.alternative {
-    color: #220131;
-    border-color: transparent;
-    background-color: transparent;
-  }
-  
-  .task-filter button.alternative:hover,
-  .task-filter button.alternative:active {
-    background-color: #ddb3f8;
-  }

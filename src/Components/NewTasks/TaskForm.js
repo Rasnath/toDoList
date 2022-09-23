@@ -1,7 +1,8 @@
 import "./TaskForm.css";
 import Form from "../UI/Form";
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import ErrorModal from "../UI/ErrorModal";
+import Button from "../UI/Button";
 
 function TaskForm(props) {
   const [givenTask, setGivenTask] = useState("");
@@ -60,7 +61,7 @@ function TaskForm(props) {
   }
 
   return (
-    <div>
+    <Fragment>
       {error && (
         <ErrorModal
           onDesmiss={desmissHandler}
@@ -74,7 +75,7 @@ function TaskForm(props) {
             <label>Date</label>
             <input
               type="date"
-              min={new Date().toISOString().split('T')[0]}
+              min={new Date().toISOString().split("T")[0]}
               value={givenDate}
               onChange={dateHandler}
             />
@@ -93,13 +94,13 @@ function TaskForm(props) {
           </Form>
         </div>
         <div className="new-task_action">
-          <button type="button" onClick={props.onCancel}>
+          <Button type="button" onClick={props.onCancel}>
             Cancel
-          </button>
-          <button type="submit">Add Task</button>
+          </Button>
+          <Button type="submit">Add Task</Button>
         </div>
       </form>
-    </div>
+    </Fragment>
   );
 }
 

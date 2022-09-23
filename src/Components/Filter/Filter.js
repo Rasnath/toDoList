@@ -1,3 +1,4 @@
+import Button from "../UI/Button";
 import "./Filter.css";
 
 const Filter = (props) => {
@@ -15,8 +16,8 @@ const Filter = (props) => {
           <option value="Medium">Medium</option>
           <option value="Low">Low</option>
         </select>
-        {props.oncompletState && <button className="button" onClick={props.onUnCompleted}>Tasks</button>}
-        {!props.oncompletState && <button className="button" onClick={props.onCompleted}>Completed</button>}
+        {props.oncompletState && <Button className="button" onClick={props.onUnCompleted}>Tasks</Button>}
+        {!props.oncompletState && <Button className="button" onClick={props.onCompleted}>Completed</Button>}
       </div>
     </div>
   );
