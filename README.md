@@ -11,12 +11,12 @@ toDoList is a responsive [React] (http://facebook.github.io/react/index.html) ap
 If you would like to download the code and try it for yourself:
 
 
-2. Download and unzip the project: `https://github.com/Rasnath/toDoList`
-1. Install Visual Studio Code `https://code.visualstudio.com/`
+1. Download and unzip the project: `https://github.com/Rasnath/toDoList`
+2. Install Visual Studio Code `https://code.visualstudio.com/`
 3. Open the project folder on Visual Studio Code.
-3. Go to Terminal > New Terminal. 
-4. Install packages in project folder: `npm install`
-4. Run: `npm start`
+4. Go to Terminal > New Terminal. 
+5. Install packages in project folder: `npm install`
+6. Run: `npm start`
 
 ## Donate :coffee:
 
