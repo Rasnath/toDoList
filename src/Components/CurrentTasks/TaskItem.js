@@ -1,12 +1,16 @@
 import TaskDate from "./TaskDate";
 import "./TaskItem.css";
 import Card from "../UI/Card";
+import React, { useContext } from "react";
+import IDContext from "../../store/id-context";
+
 
 function TaskItem(props) {
-  function betaFunction() {}
+
+  const idCxt = useContext(IDContext)
 
   function completeHandler() {
-    props.onState(props.id);
+    idCxt.onComplet(props.id);
   }
 
   let color = "#40005d";
@@ -20,7 +24,6 @@ function TaskItem(props) {
   }
 
   return (
-    <li onClick={betaFunction}>
       <Card className="task-item">
         <div>
           <TaskDate date={props.date} />
@@ -42,7 +45,6 @@ function TaskItem(props) {
           )}
         </div>
       </Card>
-    </li>
   );
 }
 export default TaskItem;

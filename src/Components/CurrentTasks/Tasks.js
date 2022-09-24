@@ -35,9 +35,6 @@ function Tasks(props) {
     }
   });
 
-  function completeHandler(id) {
-    props.onComplete(id);
-  }
 
   return (
     // other way to implement className with a unique id
@@ -53,7 +50,7 @@ function Tasks(props) {
         oncompletState={completed}
       />
       <Chart tasks={sortTasks} onFilterPriority={filterPriorityHandler}></Chart>
-      <Taskslist items={filteredTasks} onComplete={completeHandler}></Taskslist>
+      <Taskslist items={filteredTasks}></Taskslist>
     </Card>
   );
 }

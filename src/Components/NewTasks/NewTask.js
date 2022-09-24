@@ -5,6 +5,7 @@ import Button from "../UI/Button";
 
 function NewTask(props) {
   const [open, setOpen] = useState(false);
+  
   function saveNewTaskData(givenTaskData) {
     const taskData = {
       ...givenTaskData,
