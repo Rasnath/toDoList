@@ -1,5 +1,5 @@
 # toDoList
-toDoList is a responsive [React] (http://facebook.github.io/react/index.html) app, where you can create a task with date and priority, filter, mark as complete and see the summary of pending tasks in a graph.
+toDoList is a responsive [React](http://facebook.github.io/react/index.html) app, where you can create a task with date and priority, filter, mark as complete and see the summary of pending tasks in a graph.
 
 ## App preview
 ![Demo](https://user-images.githubusercontent.com/109655925/191788990-05de609b-f2cd-4b3c-a29b-565ae424bcff.gif)
