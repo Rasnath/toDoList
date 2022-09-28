@@ -1,6 +1,6 @@
   <section id="top">
   <h1>toDoList</h1>
-toDoList is a responsive [React](http://facebook.github.io/react/index.html) app, where you can create a task with date and priority, filter, mark as complete and see the summary of pending tasks in a graph.
+<p>toDoList is a responsive <a href="http://facebook.github.io/react/index.html">React</a> app, where you can create a task with date and priority, filter, mark as complete and see the summary of pending tasks in a graph.</p>
   </section>
 
   <h2>Go Too..</h2>
