@@ -26,6 +26,7 @@
       <li>Go to Terminal > New Terminal.</li>
       <li>Install packages in project folder: `npm install`</li>
       <li>Run: `npm start`</li>
+      <li>If you want to use it, fork this project.</li>
     </ol>
     <p><a href="#top">Go to top</a></p>
   </section>
